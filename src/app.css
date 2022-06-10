@@ -1,0 +1,17 @@
+.header{
+
+}
+
+.filtro{
+    background: #5D405C;
+}
+
+.filtro:hover{
+    color: black;
+    background: #5D405C;
+}
+
+.graficos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
