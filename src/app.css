@@ -1,6 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .header{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 2% 2% 2%;
+
 }
 
 .header p{

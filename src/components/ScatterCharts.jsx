@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactApexChart from "react-apexcharts";
 import './css/scatterChart.css'
+import InfoIcon from '@mui/icons-material/Info';
+import { green } from '@mui/material/colors';
 
 
 
@@ -67,7 +69,7 @@ class ApexChart extends React.Component {
 export function ScatterCharts() {
   return (
     <>
-    <h1 className="TextoScatter">Scatter</h1>
+    <h1 className="TextoScatter">Scatter                 <InfoIcon sx={{ color: green[500] }}/></h1>
     <ApexChart/>
     </>
   );

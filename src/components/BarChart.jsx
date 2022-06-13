@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactApexChart from "react-apexcharts";
 import './css/barChart.css'
+import InfoIcon from '@mui/icons-material/Info';
+import { green } from '@mui/material/colors';
 
 
 class ApexChart extends React.Component {
@@ -54,7 +56,8 @@ class ApexChart extends React.Component {
 export function BarChart() {
         return (
         <>
-          <h1 className="TextoBarras">Barras</h1>
+          <h1 className="TextoBarras">Barras <InfoIcon sx={{ color: green[500] }}/></h1>
+          
           <ApexChart/>
         </>
         );
