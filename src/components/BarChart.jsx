@@ -1,42 +1,62 @@
 import React from 'react'
-import { Chart } from "react-google-charts";
+import ReactApexChart from "react-apexcharts";
+import './css/barChart.css'
 
 
-export const data = [
-        ["City", "2010 Population", "2000 Population"],
-        ["South Korea", 8175000, 8008000],
-        ["Canada", 3792000, 3694000],
-        ["United Kingdom", 2695000, 2896000],
-        ["Netherlands", 2099000, 1953000],
-        ["Italy", 1526000, 1517000],
-        ["France", 1526000, 1517000],
-        ["Japan", 1526000, 1517000],
-        ["United States", 1526000, 1517000],
-        ["China", 1526000, 1517000],
-        ["Germany", 1526000, 1517000],
-      ];
-      
-      export const options = {
-        chart: {
-          title: "Barras",
-        },
-        bars: "horizontal",
-        axes: {
-          y: {
-            0: { side: "right" },
+class ApexChart extends React.Component {
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        series: [{
+          data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+        }],
+        options: {
+          chart: {
+            type: 'bar',
+            height: 350
           },
+          plotOptions: {
+            bar: {
+              borderRadius: 4,
+              horizontal: true,
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          xaxis: {
+            categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+              'United States', 'China', 'Germany'
+            ],
+          }
         },
+      
+      
       };
+    }
+
+  
+
+    render() {
+      return (
+        
+
+  <div id="chart">
+<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} width={880} />
+</div>
+
+
+      );
+    }
+  }
       
 export function BarChart() {
         return (
-          <Chart
-            chartType="Bar"
-            width="98%"
-            height="400px"
-            data={data}
-            options={options}
-          />
+        <>
+          <h1 className="TextoBarras">Barras</h1>
+          <ApexChart/>
+        </>
         );
       } 
 

@@ -1,0 +1,17 @@
+.TextoScatter{
+    position: absolute;
+    top: 26%;
+    font-size: 20px;
+    left: 51%;
+}
+
+.apexcharts-zoomin-icon, .apexcharts-zoomout-icon, .apexcharts-zoom-icon.apexcharts-selected, .apexcharts-pan-icon, .apexcharts-reset-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .TextoScatter{
+        top: 60%;
+        left: 2%;
+    }
+  }
