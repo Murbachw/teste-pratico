@@ -1,6 +1,6 @@
 import React from "react";
 import './app.css'
-import BarChart from "./components/BarChart"; 
+import BarChart from "./components/BarChart";
 import ScatterCharts from "./components/ScatterCharts";
 import NavBar from "./components/NavBar";
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
@@ -16,7 +16,7 @@ function App() {
     </div>
     <div className="graficos">
         <BarChart/>
-        <ScatterCharts />
+        <ScatterCharts/>
     </div>
   </div>
 }

@@ -1,9 +1,20 @@
 .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.header p{
+    grid-column-start: 1;
 }
 
 .filtro{
-    background: #5D405C;
+    background: #5D405C !important;
+    grid-column-start: 2;
+    border-radius: 10px !important;
+    width: 15%;
+    height: 38px;
+    display: flex;
+    justify-self: end;
 }
 
 .filtro:hover{
@@ -14,4 +25,5 @@
 .graficos{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
 }
