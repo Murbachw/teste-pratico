@@ -58,7 +58,7 @@ class ApexChart extends React.Component {
       
 
 <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="scatter" height={350} width={800} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="scatter" height={350} width={579} />
 </div>
 
 
